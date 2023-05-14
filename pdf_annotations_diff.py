@@ -71,10 +71,14 @@ def compare_files(file1, file2):
             print(format_annotation(annotation))
 
 
-if __name__ == "__main__":
+def main():
     # Check that two arguments are provided
     if len(sys.argv) != 3:
-        print("Usage: python3 script.py file1.pdf file2.pdf")
+        print("Usage: pdf-annotations-diff file1.pdf file2.pdf")
         sys.exit(1)
 
     compare_files(sys.argv[1], sys.argv[2])
+
+
+if __name__ == "__main__":
+    main()

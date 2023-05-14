@@ -1,46 +1,46 @@
-#+TITLE: pdf-annotations-diff
+# pdf-annotations-diff
 
 I frequently need to compare my annotations on multiple versions of a PDF file. If you are amongst the three other people who need to do the same, this Python script would be useful to you.
 
 This script compares annotations across two PDF files (which are assumed to be two versions of the same base PDF file). It outputs annotations that are unique to each of the two files.
 
-* Installation
+## Installation
 
-#+BEGIN_SRC bash
+```bash
 pip install pdf-annotations-diff
-#+END_SRC
+```
 
-* Usage
+## Usage
 
 To compare annotations in two PDF files, you can use the following command:
 
-#+BEGIN_SRC bash
+```bash
 pdf-annotations-diff file1.pdf file2.pdf
-#+END_SRC
+```
 
-* Dependencies
+## Dependencies
 
-This script depends on the [[https://pypi.org/project/PyMuPDF/][PyMuPDF]] library.
+This script depends on the [PyMuPDF](https://pypi.org/project/PyMuPDF/) library.
 
-* License
+## License
 
 Licensed under the MIT License. See the LICENSE file for more details.
 
-* Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-* Example
+## Example
 
 This is an example of how to use pdf-annotations-diff to compare two PDF files:
 
-#+BEGIN_SRC bash
+```bash
 pdf-annotations-diff Men\ Without\ Women\ -\ Haruki\ Murakami.pdf Men\ Without\ Women\ -\ Haruki\ Murakami.sync-conflict.pdf
-#+END_SRC
+```
 
 And the resulting output would look something like this:
 
-#+BEGIN_EXAMPLE
+```
 Unique Annotations in Men Without Women - Haruki Murakami.pdf:
 
 Underline at page 207
@@ -68,4 +68,4 @@ Info:
   title: Sameer A5
   creationDate: D:20230423214101Z00'00
   modDate: D:20230423214101Z00'00
-#+END_EXAMPLE
+```
